@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Redes Sociales</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px 30px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #667eea;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-btn:active {
+            transform: translateY(-1px);
+        }
+
+        .facebook {
+            background: #1877f2;
+        }
+
+        .facebook:hover {
+            background: #0d65d9;
+        }
+
+        .instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        .instagram:hover {
+            opacity: 0.9;
+        }
+
+        .tiktok {
+            background: #000000;
+        }
+
+        .tiktok:hover {
+            background: #1a1a1a;
+        }
+
+        .fanvue {
+            background: linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%);
+        }
+
+        .fanvue:hover {
+            background: linear-gradient(135deg, #7C3AED 0%, #4F46E5 100%);
+        }
+
+        .onlyfans {
+            background: #00AFF0;
+        }
+
+        .onlyfans:hover {
+            background: #0096D1;
+        }
+
+        .icon {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            .profile-photo {
+                width: 120px;
+                height: 120px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .subtitle {
+                font-size: 14px;
+            }
+
+            .social-btn {
+                font-size: 14px;
+                padding: 12px 15px;
+            }
+
+            .icon {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .profile-photo {
+                width: 100px;
+                height: 100px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Foto de perfil -->
+        <img src="src/img.jpeg" alt="Foto de perfil" class="profile-photo">
+        
+        <!-- Nombre o título -->
+        <h1>Sofía González</h1>
+        <p class="subtitle">Encuéntrame en mis redes sociales</p>
+        
+        <!-- Enlaces a redes sociales -->
+        <div class="social-links">
+            <a href="https://fanvue.com/sofiagonzalezofficial" class="social-btn fanvue" target="_blank">
+                <span class="icon">🔥</span>
+                Fanvue
+            </a>
+            <a href="https://www.facebook.com/sofiagonzalezlpz" class="social-btn facebook" target="_blank">
+                <span class="icon">📘</span>
+                Facebook
+            </a>
+            
+            <a href="https://www.instagram.com/sofiagonzalezoff" class="social-btn instagram" target="_blank">
+                <span class="icon">📸</span>
+                Instagram
+            </a>
+            
+            <a href="https://www.tiktok.com/@sofiagonzalezlp" class="social-btn tiktok" target="_blank">
+                <span class="icon">🎵</span>
+                TikTok
+            </a>
+            
+           <!--  <a href="https://fanvue.com/tuperfil" class="social-btn fanvue" target="_blank">
+                <span class="icon">💎</span>
+                Fanvue
+            </a> -->
+            
+            
+        </div>
+    </div>
+</body>
+</html>
